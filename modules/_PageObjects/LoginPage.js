@@ -1,4 +1,4 @@
-import AppPage from './../../AppPage';
+import AppPage from '../AppPage';
 
 class LoginPage extends AppPage{
 
@@ -12,6 +12,10 @@ class LoginPage extends AppPage{
 
     get password () {
         return browser.$('//input[@name="password"]');
+    }
+
+    get forgotPassword() {
+        return $('//div[@id="root"]//a[@qa="forgot-password-link"]');
     }
 
     get submitBtn () {
