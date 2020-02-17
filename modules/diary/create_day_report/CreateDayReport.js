@@ -75,7 +75,8 @@ class CreateDayReport extends AppPage{
     }
 
     get gotAJobOffer () {
-        return browser.$('form input[label = "Got a job offer"]')
+        return browser.$('form input[label = "Got a job offer"]');
+        browser.pause(3000);
     }
 
     get reportSaveButton () {
@@ -90,10 +91,8 @@ const pageReportCreate = {
     buttonText: 'Save',
     morale: '8',
     hours: '5',
-    description: 'My description.',
+    description: 'My description.'
 };
 
-
-export default new CreateDayReport();
 module.exports = {pageReportCreate, CreateDayReport};
-
+export default new CreateDayReport();

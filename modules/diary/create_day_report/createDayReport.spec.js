@@ -1,9 +1,11 @@
-import { expect } from 'chai';
+import LoginPage from "../../_PageObjects/LoginPage"
 import CreateDayReport from "./CreateDayReport";
 
 describe('CREATE DAY REPORT', () => {
-    it('should open login page', () => {
-        CreateDayReport.open();
+
+    before('Should login as User', () => {
+        LoginPage.open();
+        LoginPage.login();
     });
 
     it('should click top menu `Diary`', () => {
@@ -17,7 +19,7 @@ describe('CREATE DAY REPORT', () => {
     });
 
     it('should have correct `Create day report` title', () => {
-        CreateDayReport.title.getText().eq(CreateDayReport.pageReportCreate.h1);
+        CreateDayReport.h1.getText().eq(CreateDayReport.pageReportCreate.h1);
     });
 
     it('should choose Morale' , () => {
@@ -28,13 +30,11 @@ describe('CREATE DAY REPORT', () => {
 
     });
 
-
     it('should fill out study hours', () => {
         const element = $(CreateDayReport.hoursStudiedInput);
         element.setValue(CreateDayReport.pageReportCreate.hours);
         //browser.pause(500);
     });
-
 
     it ('should fill out `How was your day` form', () => {
         const element = $(CreateDayReport.descriptionInput);
