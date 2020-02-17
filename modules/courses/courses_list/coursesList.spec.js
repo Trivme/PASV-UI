@@ -16,6 +16,7 @@ describe('COURSE LIST', () => {
         expect(CoursesList.h1.getText()).eq('Courses');
     });
 
+
     it('should click first item in the course list', () => {
         CoursesList.name1.click();
         browser.pause(500);
@@ -34,6 +35,7 @@ describe('COURSE LIST', () => {
         CoursesList.topMenuCards.click();
     });
 
+
     it('should click second item in the course list', () => {
         CoursesList.name2.click();
         browser.pause(500);
@@ -51,6 +53,7 @@ describe('COURSE LIST', () => {
         expect(CoursesList.h1.getText()).eq('Course Report');
         CoursesList.topMenuCards.click();
     });
+
 
     it('should click third item in the course list', () => {
         CoursesList.name3.click();
