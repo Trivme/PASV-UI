@@ -8,8 +8,8 @@ describe('COURSE LIST', () => {
         browser.pause(500);
     });
 
-    it('should click top menu Cards', () => {
-        CoursesList.topMenuCards.click();
+    it('should click top menu Courses', () => {
+        CoursesList.topMenuCourses.click();
     });
 
     it('should have correct title', () => {
@@ -21,7 +21,7 @@ describe('COURSE LIST', () => {
         CoursesList.name1.click();
         browser.pause(500);
         expect(CoursesList.h1.getText()).eq('JS');
-        CoursesList.topMenuCards.click();
+        CoursesList.topMenuCourses.click();
     });
 
     it('should have description about course', () => {
@@ -32,7 +32,7 @@ describe('COURSE LIST', () => {
         CoursesList.progress1.click();
         browser.pause(2000);
         expect(CoursesList.h1.getText()).eq('Course Report');
-        CoursesList.topMenuCards.click();
+        CoursesList.topMenuCourses.click();
     });
 
 
@@ -40,7 +40,7 @@ describe('COURSE LIST', () => {
         CoursesList.name2.click();
         browser.pause(500);
         expect(CoursesList.h1.getText()).eq('jgkjkh');
-        CoursesList.topMenuCards.click();
+        CoursesList.topMenuCourses.click();
     });
 
     it('should have description about course', () => {
@@ -51,7 +51,7 @@ describe('COURSE LIST', () => {
         CoursesList.progress2.click();
         browser.pause(2000);
         expect(CoursesList.h1.getText()).eq('Course Report');
-        CoursesList.topMenuCards.click();
+        CoursesList.topMenuCourses.click();
     });
 
 
@@ -59,7 +59,7 @@ describe('COURSE LIST', () => {
         CoursesList.name3.click();
         browser.pause(500);
         expect(CoursesList.h1.getText()).eq('jglghg');
-        CoursesList.topMenuCards.click();
+        CoursesList.topMenuCourses.click();
     });
 
     it('should have description about course', () => {
@@ -70,7 +70,7 @@ describe('COURSE LIST', () => {
         CoursesList.progress3.click();
         browser.pause(2000);
         expect(CoursesList.h1.getText()).eq('Course Report');
-        CoursesList.topMenuCards.click();
+        CoursesList.topMenuCourses.click();
     });
 
 });

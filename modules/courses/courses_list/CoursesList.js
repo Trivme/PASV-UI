@@ -4,7 +4,7 @@ class CoursesList extends AppPage{
     get h1(){
         return browser.$('//h1');
     }
-    get topMenuCards(){
+    get topMenuCourses(){
         return browser.$('//div[@id="site-menu"]//a[@qa="courses-link"]');
     }
     get name1(){
