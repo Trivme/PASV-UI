@@ -4,6 +4,8 @@ import FlashCardsPage from '../../_page/FlashCardsPage';
 import LoginPage from '../../user/_page/LoginPage';
 import { student } from '../../user/_data/user.data';
 import CardsTrainingPage from '../_page/CardsTrainingPage';
+// test changes
+// test changes
 
 let nrOfCards;
 
